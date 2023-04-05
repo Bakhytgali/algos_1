@@ -22,7 +22,7 @@ write the function that returns minimum of them.*
 **Problem**: *You are given a number “n” and an array of “n” elements,
 write the function that returns average of them.*
 <br/><br/>
-**Key Moments**: Here I decided just to write a function that finds me a `sum of an array`. Then I just devide it by the lenght of an array.
+**Key Moments**: Function `findSum()` was used to find the sum of the elements and declaring it as a new value for array[0]. Next step is deviding the returned value by the length of an array.
 <br/><br/>
 **Solution**:
 ```java
@@ -43,7 +43,7 @@ write the function that returns average of them.*
 **Problem**: *You are given a number “n”, write the function for checking
 whether“n” is prime.*
 <br/><br/>
-**Key Moments**: I haven't used recursion here. I used `for loop` to define, if the given number n devides without remainder for any integer number in range [2; n).
+**Key Moments**: In function `isPrime()` I used `for loop` to define, if the given number n devides without remainder for any integer number `in range [2; n).`
 <br/><br/>
 **Solution**:
 ```java
@@ -73,6 +73,40 @@ finding “n!”*
             return 1;
         } else {
             return n * factorial(n-1);
+        }
+    }
+```
+## Task 5
+**Problem**: *You are given a number “n”, write the function for finding n-th
+elements in Fibonacci sequence using recursion. (Fn = Fn-1+ Fn-2).
+F0= 0, F1 = 1.”*
+<br/><br/>
+**Key Moments**: Function `fibonacci()' return the value which equals to the sum of the previous 2 elements.
+<br/><br/>
+**Solution**:
+```java
+  public static int fibonacci(int n){
+        if(n == 0){
+            return 0;
+        } else if(n == 1){
+            return 1;
+        } else {
+            return fibonacci(n-1) + fibonacci(n-2);
+        }
+    }
+```
+## Task 6
+**Problem**: *You are given numbers “a” and “n”, write the function that returns “a^n”.*
+<br/><br/>
+**Key Moments**: `Function power()` returns the value of a multiplicating itself n-times. I used `long` data type because of the potential big input.
+<br/><br/>
+**Solution**:
+```java
+  public static long power(int a, int n){
+        if(n == 0){
+            return 1;
+        } else {
+            return a * power(a, n-1);
         }
     }
 ```
