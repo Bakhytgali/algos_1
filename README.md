@@ -111,9 +111,11 @@ F0= 0, F1 = 1.”*
     }
 ```
 ## Task 7
-**Problem**: *You are given numbers “a” and “n”, write the function that returns “a^n”.*
+**Problem**: *You are given a number “n” and an array of “n” elements,
+write the program that returns given array in reverse order
+without using array data structure.*
 <br/><br/>
-**Key Moments**: `Function power()` returns the value of a multiplicating itself n-times. I used `long` data type because of the potential big input.
+**Key Moments**: Here I'm just creating a string that consists element of `array in reverse` and " " between them.
 <br/><br/>
 **Solution**:
 ```java
@@ -126,9 +128,10 @@ F0= 0, F1 = 1.”*
     }
 ```
 ## Task 8
-**Problem**: *You are given numbers “a” and “n”, write the function that returns “a^n”.*
+**Problem**: *You are given a string “s”, write the function for checking
+whether “s” is all consists of digits.*
 <br/><br/>
-**Key Moments**: `Function power()` returns the value of a multiplicating itself n-times. I used `long` data type because of the potential big input.
+**Key Moments**: *Was the hardest task for me*. First of all, I'm turning a `String` to an `array char` using `toCharArray()`. After, in fuction `allDigits()` I'm turning each element of char array to a string, just to turn it into integer later. 
 <br/><br/>
 **Solution**:
 ```java
@@ -150,9 +153,18 @@ F0= 0, F1 = 1.”*
     }
 ```
 ## Task 9
-**Problem**: *You are given numbers “a” and “n”, write the function that returns “a^n”.*
+**Problem**: *You are given numbers“n” and “k”,write the program that
+finds Cn
+k
+(binomial coefficient) using formulaCn
+k=Cn−1
+k−1
++Cn−1
+k where Cn
+0=Cn
+n=1.*
 <br/><br/>
-**Key Moments**: `Function power()` returns the value of a multiplicating itself n-times. I used `long` data type because of the potential big input.
+**Key Moments**: **I MADE A MISTAKE.** Below you can see `if-statement` and `bubble sorting` in my main function. I did it in case of first inputed number was less than the second one. And I'm making the result outputing with "-". That is not correct. Formula given in the task is not suggesting second number to be greater than first.
 <br/><br/>
 **Solution**:
 ```java
@@ -175,9 +187,10 @@ F0= 0, F1 = 1.”*
     }
 ```
 ## Task 10
-**Problem**: *You are given numbers “a” and “n”, write the function that returns “a^n”.*
+**Problem**: *You are given “a” and “b”, write the function for finding
+GCD(a, b) using recursion. (Hint: Euclidean Algorithm)*
 <br/><br/>
-**Key Moments**: `Function power()` returns the value of a multiplicating itself n-times. I used `long` data type because of the potential big input.
+**Key Moments**: Just Euclidean Algorithm. I love bubble sorting.  
 <br/><br/>
 **Solution**:
 ```java
