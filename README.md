@@ -164,7 +164,7 @@ k where Cn
 0=Cn
 n=1.*
 <br/><br/>
-**Key Moments**: **I MADE A MISTAKE.** Below you can see `if-statement` and `bubble sorting` in my main function. I did it in case of first inputed number was less than the second one. And I'm making the result outputing with "-". That is not correct. Formula given in the task is not suggesting second number to be greater than first.
+**Key Moments**: **I MADE A MISTAKE.** Below you can see `if-statement`in my main function. I did it in case of first inputed number was less than the second one. And I'm making the result outputing with "-". That is not correct. Formula given in the task is not suggesting second number to be greater than first.
 <br/><br/>
 **Solution**:
 ```java
@@ -190,7 +190,7 @@ n=1.*
 **Problem**: *You are given “a” and “b”, write the function for finding
 GCD(a, b) using recursion. (Hint: Euclidean Algorithm)*
 <br/><br/>
-**Key Moments**: Just Euclidean Algorithm. I love bubble sorting.  
+**Key Moments**: Just Euclidean Algorithm.
 <br/><br/>
 **Solution**:
 ```java
