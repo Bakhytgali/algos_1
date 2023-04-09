@@ -164,20 +164,10 @@ k where Cn
 0=Cn
 n=1.*
 <br/><br/>
-**Key Moments**: **I MADE A MISTAKE.** Below you can see `if-statement`in my main function. I did it in case of first inputed number was less than the second one. And I'm making the result outputing with "-". That is not correct. Formula given in the task is not suggesting second number to be greater than first.
+**Key Moments**:
 <br/><br/>
 **Solution**:
 ```java
-  if(n < k) {
-            int temp = n;
-            n = k;
-            k = temp;
-            System.out.println("Result is -" + findFormula(n, k) + ".");
-        }
-        else{
-            System.out.println("Result is " + findFormula(n, k) + ".");
-        }
-    }
     public static int findFormula(int n, int k){
         if(n == k || k == 0){
             return 1;
@@ -190,7 +180,7 @@ n=1.*
 **Problem**: *You are given “a” and “b”, write the function for finding
 GCD(a, b) using recursion. (Hint: Euclidean Algorithm)*
 <br/><br/>
-**Key Moments**: Just Euclidean Algorithm.
+**Key Moments**: The Euclidean Algorithm for finding GCD(A,B) is as follows: If A = 0 then GCD(A,B)=B, since the GCD(0,B)=B, and we can stop. If B = 0 then GCD(A,B)=A, since the GCD(A,0)=A, and we can stop. Write A in quotient remainder form (A = B⋅Q + R)
 <br/><br/>
 **Solution**:
 ```java
