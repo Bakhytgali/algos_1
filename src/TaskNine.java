@@ -4,20 +4,12 @@ public class TaskNine {
         Scanner sc = new Scanner(System.in);
         System.out.println( "You are testing a task #9 \n" +
                             "Enter the first value: ");
-        int n = sc.nextInt();
+        int n = sc.nextInt(); /* Entering the first number  */
         System.out.println("Enter the second value: ");
-        int k = sc.nextInt();
-        if(n < k) {
-            int temp = n;
-            n = k;
-            k = temp;
-            System.out.println("Result is -" + findFormula(n, k) + ".");
-        }
-        else{
-            System.out.println("Result is " + findFormula(n, k) + ".");
-        }
+        int k = sc.nextInt(); /* Entering second number */
+        System.out.println("Result is " + findFormula(n, k) + ".");
     }
-    public static int findFormula(int n, int k){
+    public static int findFormula(int n, int k){ /* Function to find the answer using the given formula */ 
         if(n == k || k == 0){
             return 1;
         } else {
