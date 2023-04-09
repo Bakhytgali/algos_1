@@ -7,14 +7,9 @@ public class TaskTen {
         int a = sc.nextInt();
         System.out.println("Enter the value of b: ");
         int b = sc.nextInt();
-        if (b > a) { /* In case if the user will enter less value first */
-            int temp = a;
-            a = b;
-            b = temp;
-        }
-            System.out.println("The GCD of the number a and b is " + findGCD(a, b) + ".");
+        System.out.println("The GCD of the number a and b is " + findGCD(a, b) + ".");
     }
-    public static int findGCD(int a, int b){
+    public static int findGCD(int a, int b){ /* Function that find the Greatest Common Divisor using Euclidean Algorithm */
         if(a%b == 0){
             return b;
         } else {
